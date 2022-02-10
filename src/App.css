@@ -1,38 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("assets/background.png") no-repeat;
+  color: #FFF;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-flow: column;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  font-size: 24px;
+  margin: 0 0 68px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4682B4;
+  color: #FFF;
+  border: 3px solid #000;
+  width: 99%;
+  height: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content {
+  display: flex;
+  margin: 0 0 50px 0;
+}
+
+.moskva {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  max-width: 100%;
+}
+
+.header_moskva {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+.sadovod {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+
+.header_sadovod {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+.vorota {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+
+.header_vorota {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+.img {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px 0;
+  border: 1px solid #000;
+}
+
+.button {
+  width: 150px;
+  height: 60px;
+  font-size: 16px;
+  background-color: #FFF;
+  color: black;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.text {
+  margin: 0 0 50px 0;
+}
+
+.contacts {
+  margin: 150px 0 170px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.phone {
+  margin: 0 0 25px 0;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  color: #FFF;
+  display: flex;
+  font-size: 21px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 100px;
+  padding: 15px;
+}
+
+.img-before {
+  width: 20px;
+  height: 20px;
+  margin: 5px 5px 0 0;
+}
+
+.hr {
+  width: 5px;
+  background-color: #000;
+  margin: 0 0 0 -150px;
+}
+
+@media (max-width: 1280px) {
+  .header {
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    background: url("assets/background.png") 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .moskva {
+    margin: 0 0 50px 0;
+  }
+
+  .header_moskva {
+
+  }
+
+  .sadovod {
+    margin: 0 0 50px 0;
+  }
+
+  .header_sadovod {
+
+  }
+
+  .vorota {
+    margin: 0 0 50px 0;
+  }
+
+  .header_vorota {
+
+  }
+
+  .footer {
+    position: relative;
+    padding: 50px;
   }
 }
